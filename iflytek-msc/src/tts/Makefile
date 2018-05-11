@@ -21,6 +21,9 @@ $(BIN_TARGET) : $(OBJECTS)
 clean:
 	@rm -f *.o $(BIN_TARGET)
 
+install:
+	@mv $(BIN_TARGET) /usr/bin
+
 .PHONY:clean
 
 #common makefile foot
